@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    font-size : 18px;
+    background: url(https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+h1{
+    font-size : 1.2rem;
+    margin: 10px;
+    padding: 10px;
+    align-items: right !important;
+    
+}
+
+p {
+    font-weight: 700;
+    color: white
+}
+
+h2{
+    font-size: 1.1rem;
+}
+header, footer {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added subtle shadow */
+    position: relative; /* Needed for logo positioning */
+}
+
+header {
+    display: flex;
+    padding: 15px 20px;
+    height: 30px;
+    background: linear-gradient(135deg, grey 0%, black 100%);
+}
+
+/* Logo styling */
+.header-logo {
+    position: absolute;
+    right: 20px;
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
+}
+
+.logo1 {
+    align-items: left !important;
+}
+
+form{
+    width : 70%;
+    max-width: 500px;
+    margin : 40px auto;
+    padding : 40px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    color: black !important;
+    font-size: 700;
+}
+form h1{
+    margin-bottom: 20px;
+}
+
+form input,
+form select{
+    width : 100%;
+    padding : 10px;
+    margin : 10px 0;
+    box-sizing: border-box;
+    border : solid thin black;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    color: black !important;
+    font-weight: 700;
+}
+
+.name{
+    text-transform: capitalize;
+}
+div{
+    background : #fff;
+    width : 70%;
+    max-width: 500px;
+    margin : 40px auto;
+    padding : 40px;
+    font-size: 14px;
+    display: block;
+    border: dashed;
+}
+
+.pass label{
+    width : 220px;
+    display: inline-block; 
+    color: #333;
+    margin: 10px;
+    
+}
+/* For most modern browsers */
+::placeholder {
+    color: black !important;
+    font-weight: 700 !important;
+    opacity: 1; /* Firefox reduces opacity by default */
+}
+
+/* For older browsers */
+::-webkit-input-placeholder { /* Chrome/Edge/Safari */
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+::-moz-placeholder { /* Firefox 18- */
+    color: black !important;
+    font-weight: 700 !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* IE 10-11 */
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+:-moz-placeholder { /* Firefox 19- */
+    color: black !important;
+    font-weight: 700 !important;
+    opacity: 1;
+}
+
+#type, #role {
+  /* Basic Styles */
+  height: auto;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  /* Transition Effects */
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+  /* Dropdown Arrow - Custom */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+}
+
+/* Hover State */
+#type:hover, #role:hover {
+  border-color: #6c757d;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Focus State */
+#type:focus, #role:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+/* Disabled Option Style */
+#type option[disabled], #role option[disabled] {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+/* Regular Options Style */
+#type option, #role option {
+  padding: 10px;
+  background: white;
+  color: #333;
+  font-weight: 500;
+}
+
+/* For Firefox to remove dotted outline */
+#type:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}

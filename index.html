@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Parking System</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/app.js" type="module"></script>
+</head>
+
+<body>
+<header>
+    <p style="text-align: right;"> Car Parking System</p>
+    <img src="car.png" alt="" class="logo1">
+</header>
+
+<main>
+
+    <form class="user">
+        <h1>User Registeration</h1>
+        <input id="userName" type="text" placeholder="Name*" required >
+        <input  id="userContact" type="text" placeholder="Contact*" required pattern="[0-9]{10}" >
+        <select id="role">
+            <option selected disabled value="">-- Select Role --</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+        </select>
+        <input type="submit" value="Register"id="userSaveBtn" >
+    </form>
+
+    <form class="vehicle" >
+        <h1>Vehicle Registeration</h1>
+        <input id="vehicleId" type="text" placeholder="Vehicle Id" required>
+        <input id="vehicleModel" type="text" placeholder="Vehicle Model" required>
+        <select id="type">
+            <option selected disabled value="">-- Select Type --</option>
+            <option value="cycle">Cycle</option>
+            <option value="bike">Bike</option>
+            <option value="car">Car</option>
+        </select>
+        <input type="submit" value="Register"id="vehicleSaveBtn">
+    </form>
+
+    <form class="pass-choice"></form>
+
+    <div class="pass"></div>
+
+</main>
+
+<footer>
+    &copy; Copyright 2024 | CPS | Smart Parkers
+</footer>
+</body>
+</html>
